@@ -1,0 +1,29 @@
+---
+import "bootstrap/dist/css/bootstrap.min.css";
+---
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>الحاج صالح لمواد البناء</title>
+  </head>
+  <body class="bg-light">
+
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <span class="navbar-brand">الحاج صالح لمواد البناء</span>
+      </div>
+    </nav>
+
+    <main class="container my-4">
+      <slot />
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+      © 2025 الحاج صالح لمواد البناء
+    </footer>
+
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
