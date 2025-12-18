@@ -1,3 +1,4 @@
+```astro
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 
@@ -6,20 +7,20 @@ const products = [
     name: "الحديد",
     img: "/images/steel.jpg",
     desc: "حديد تسليح عالي الجودة",
-    details: ["8 - 32 ملم", "محلي / مستورد", "حسب السوق"]
+    details: ["8 - 32 ملم", "محلي / مستورد", "حسب السوق"],
   },
   {
     name: "الأسمنت",
     img: "/images/cement.jpg",
     desc: "أسمنت مطابق للمواصفات",
-    details: ["بورتلاندي", "50 كجم", "حسب الكمية"]
+    details: ["بورتلاندي", "50 كجم", "حسب الكمية"],
   },
   {
     name: "الأخشاب",
     img: "/images/wood.jpg",
     desc: "أخشاب للبناء والديكور",
-    details: ["سويدي / ماليزي", "أطوال متعددة", "حسب المقاس"]
-  }
+    details: ["سويدي / ماليزي", "أطوال متعددة", "حسب المقاس"],
+  },
 ];
 ---
 
@@ -30,24 +31,29 @@ const products = [
   </div>
 
   <div class="row g-4">
-    {products.map(p => (
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <img src={p.img} class="card-img-top" style="height:200px;object-fit:cover" />
-          <div class="card-body">
-            <h5>{p.name}</h5>
-            <p class="text-muted">{p.desc}</p>
-            <ul class="list-group list-group-flush">
-              {p.details.map(d => (
-                <li class="list-group-item">{d}</li>
-              ))}
-            </ul>
+    {products.map((p) => {
+      return (
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img
+              src={p.img}
+              class="card-img-top"
+              style="height:200px; object-fit:cover"
+              alt={p.name}
+            />
+            <div class="card-body">
+              <h5 class="card-title">{p.name}</h5>
+              <p class="text-muted">{p.desc}</p>
+              <ul class="list-group list-group-flush">
+                {p.details.map((d) => (
+                  <li class="list-group-item">{d}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    ))}
+      );
+    })}
   </div>
 </MainLayout>
 ```
-
----
