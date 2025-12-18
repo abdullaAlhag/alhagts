@@ -5,46 +5,77 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>الحاج صالح لمواد البناء</title>  <!-- Bootstrap 5.3.8 -->  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">  <style>
+    body { background-color: #f8f9fa; }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style></head>
+<body><!-- Navbar --><nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">الحاج صالح لمواد البناء</a>
+  </div>
+</nav><!-- Header --><div class="container my-4">
+  <div class="text-center">
+    <h1 class="fw-bold">مرحبا بكم</h1>
+    <p class="text-muted">تجارة وبيع مواد البناء بأفضل الأسعار</p>
+  </div>
+</div><!-- Products --><div class="container">
+  <div class="row g-4"><!-- حديد -->
+<div class="col-md-4">
+  <div class="card shadow-sm">
+    <img src="images/steel.jpg" class="card-img-top" alt="الحديد">
+    <div class="card-body">
+      <h5 class="card-title">الحديد</h5>
+      <p class="card-text">حديد تسليح عالي الجودة بمقاسات مختلفة.</p>
+      <ul class="list-group list-group-flush mb-2">
+        <li class="list-group-item">القطر: 8 - 32 ملم</li>
+        <li class="list-group-item">المنشأ: محلي / مستورد</li>
+        <li class="list-group-item">السعر: حسب السوق</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- أسمنت -->
+<div class="col-md-4">
+  <div class="card shadow-sm">
+    <img src="images/cement.jpg" class="card-img-top" alt="الأسمنت">
+    <div class="card-body">
+      <h5 class="card-title">الأسمنت</h5>
+      <p class="card-text">أسمنت مقاوم مطابق للمواصفات.</p>
+      <ul class="list-group list-group-flush mb-2">
+        <li class="list-group-item">النوع: بورتلاندي</li>
+        <li class="list-group-item">الوزن: 50 كجم</li>
+        <li class="list-group-item">السعر: حسب الكمية</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- أخشاب -->
+<div class="col-md-4">
+  <div class="card shadow-sm">
+    <img src="images/wood.jpg" class="card-img-top" alt="الأخشاب">
+    <div class="card-body">
+      <h5 class="card-title">الأخشاب</h5>
+      <p class="card-text">أخشاب للبناء والديكور بجودة عالية.</p>
+      <ul class="list-group list-group-flush mb-2">
+        <li class="list-group-item">النوع: سويدي / ماليزي</li>
+        <li class="list-group-item">الأطوال: متعددة</li>
+        <li class="list-group-item">السعر: حسب المقاس</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div><!-- Footer --><footer class="bg-dark text-white text-center py-3 mt-4">
+  <p class="mb-0">© 2025 الحاج صالح لمواد البناء</p>
+</footer><script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script></body>
 </html>
